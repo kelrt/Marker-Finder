@@ -6,19 +6,19 @@ class RegionService {
   static final List<Map<String, dynamic>> _regions = [
     {
       'name': 'Tennessee',
-      'file': 'hmdb_usa_tn.csv',
+      'file': 'hmdb_usa_tennessee.csv',
       'center': LatLng(35.8, -86.0),
       'country': 'USA',
     },
     {
       'name': 'Georgia',
-      'file': 'hmdb_usa_ga.csv',
+      'file': 'hmdb_usa_georgia.csv',
       'center': LatLng(32.9, -83.4),
       'country': 'USA',
     },
     {
       'name': 'Alabama',
-      'file': 'hmdb_usa_ala.csv',
+      'file': 'hmdb_usa_alabama.csv',
       'center': LatLng(32.8, -86.8),
       'country': 'USA',
     },
@@ -70,7 +70,8 @@ class RegionService {
     }).toList();
 
     // Sort by distance (closest first)
-    distances.sort((a, b) => (a['distance'] as double).compareTo(b['distance'] as double));
+    distances.sort(
+        (a, b) => (a['distance'] as double).compareTo(b['distance'] as double));
 
     // Return the file name of the closest region
     final closestRegion = distances.first['region'] as Map<String, dynamic>;
