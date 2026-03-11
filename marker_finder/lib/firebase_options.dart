@@ -40,6 +40,8 @@ class DefaultFirebaseOptions {
     }
   }
 
+  //uhm....should the api keys be shown here and committed to a public repo?
+
   static const FirebaseOptions web = FirebaseOptions(
     apiKey: 'AIzaSyCfFP22uEmzmzqy2eKxXDeOpdE0swmwJTA',
     appId: '1:984320154803:web:476f1a503fc4123f9fa4c6',
