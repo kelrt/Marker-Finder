@@ -1,3 +1,1 @@
-hanges are sudden im ngl...
-
-need to tidy up these files and streamline to avoid technical debt
+TODO: rebuild the entire project from scratch. it has been far too long since i worked on this and I really do not remember much about how it works. and iirc, since i knew so little about flutter when i started, i was starting to get really limited by older architecture decisions by the time i got to making pages for user accounts and so on.
